@@ -6,6 +6,7 @@
     <title>{% block title %}{{ resource.meta.title }}{% endblock %} | {{ site_title }}</title>
     <meta name="description" content="{{ resource.meta.description }}">
     <meta name="author" content="{{ resource.meta.author }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     {# Le HTML5 shim, for IE6-8 support of HTML elements #}
     <!--[if lt IE 9]>
@@ -13,7 +14,14 @@
     <![endif]-->
 
     {% block basecss %}
-    <link href="{{ media_url('css/bootstrap1.css') }}" rel="stylesheet">
+    <link href="{{ media_url('css/bootstrap.css') }}" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    <link href="{{ media_url('css/bootstrap-responsive.css') }}" rel="stylesheet">
     <link href="{{ media_url('css/style.css') }}" rel="stylesheet">
     {% endblock basecss %}
     {% block css %}{% endblock %}
@@ -37,8 +45,8 @@
     {% endblock analytics %}
   </head>
 
-  <body class="{{ resource.meta.id if resource.meta.id else resource.slug }}">
-
+<!--  <body class="{{ resource.meta.id if resource.meta.id else resource.slug }}">-->
+  <body>
     {% block body %}
 
     <div class="container" id="top">
@@ -66,11 +74,12 @@
     {% block jquery %}
     {# Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary #}
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
-    <script>window.jQuery || document.write('<script src="{{ media_url('js/libs/jquery-1.7.1.min.js') }}">\x3C/script>')</script>
+    <script>window.jQuery || document.write('<script src="{{ media_url('js/libs/jquery-1.7.1.js') }}">\x3C/script>')</script>
     {% endblock jquery %}
 
     {% block bootstrap_scripts %}
     {# Uncomment any of these lines to enable that plugin on your site #}
+        <script src="media/js/libs/bootstrap.js"></script>
 {#    <script src="{{ media_url('js/libs/bootstrap-alerts.js') }}"></script>#}
 {#    <script src="{{ media_url('js/libs/bootstrap-buttons.js') }}"></script>#}
 {#    <script src="{{ media_url('js/libs/bootstrap-dropdown.js') }}"></script>#}

@@ -19,5 +19,9 @@ context:
               url: index.html
             - title: Landing
               url: landing.html
+            - title: Landing2
+              url: landing2.html
+
 simple_copy:
-    - media/js/jquery-1.7.1.min.js
+    - media/js/libs/jquery-1.7.1.min.js
+    - media/js/libs/bootstrap.js
