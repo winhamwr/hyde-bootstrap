@@ -19,8 +19,10 @@ context:
               url: index.html
             - title: Landing
               url: landing.html
-            - title: Landing2
-              url: landing2.html
+            - title: Fluid
+              url: landing-fluid.html
+            - title: Starter
+              url: starter.html
 
 simple_copy:
     - media/js/libs/jquery-1.7.1.min.js
