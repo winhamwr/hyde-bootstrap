@@ -4,7 +4,7 @@
 
 {% block basecss %}
 {{ super() }}
-<link href="{{ media_url('css/columns.css') }}" rel="stylesheet">
+<link href="{{ media_url('css/columns2.css') }}" rel="stylesheet">
 {% endblock basecss %}
 
 
@@ -19,8 +19,8 @@
   {% endblock header %}
 </div>
 
-<div class="row">
-  <div class="span6">
+<div class="row-fluid">
+  <div class="span8">
       {% filter markdown -%}
       {% block main %}{% endblock %}
       {%- endfilter %}
