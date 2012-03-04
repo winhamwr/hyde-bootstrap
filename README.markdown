@@ -1,8 +1,8 @@
 # hyde-bootstrap
 
-A layout for [Hyde][hyde] using the [Bootstrap][bootstrap] framework.
+A layout for [Hyde][hyde] using the [Bootstrap 2][bootstrap] framework.
 
-Current stable version: v0.2
+Current stable version: v0.21
 
 ## Demo
 I'm working on getting a demo site up. For now, you can look at the [specific Bootstrap example layout][bootstrap_template] this was based on.
@@ -71,7 +71,7 @@ elements of your site. In the default hyde-bootstrap setup, analytics is only re
 Built using:
 
   * Hyde [0.8.4](http://github.com/hyde/hyde/tree/42d30a6ff979c444fbec5bf04e56863d7d63fef9) -- [homepage][hyde], [repo](http://github.com/hyde/hyde)
-  * Bootstrap [1.4.0](http://github.com/twitter/bootstrap/tree/f92759b36db43e782e4235f1f214ac5851383f9b) -- [homepage][bootstrap], [repo](http://github.com/twitter/bootstrap/)
+  * Bootstrap [2.0.1](http://github.com/twitter/bootstrap/tree/3d58b4622671bc51c22c857641db3b988e73632a) -- [homepage][bootstrap], [repo](http://github.com/twitter/bootstrap/)
 
 
 ## Notes
@@ -86,7 +86,7 @@ List of features I'd like to see added (by me or by you via a pull request!)
 
 ## Credits
 Built by [Jeremy Blanchard](http://blanchardjeremy.com).
-
+Bootstrap 2.0 modifications and mistakes by Christopher Lee.
 
 [hyde]: http://hyde.github.com/
 [bootstrap]: http://twitter.github.com/bootstrap/
